@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+:root {
+    --normal-text: 'Rubik', sans-serif;
+    --head-text: 'Rubik', sans-serif;
+    --light-text: 'Rubik', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+    .container {
+        padding: 7em ;
+    }
+
+body {
+    background-color: whitesmoke;
+}
+
+/*HEADER SECTION STARTS*/
+.logo h1 img {
+    width: 10%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 2em;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2em;
+}
+
+header nav ul li a {
+    color: black;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #6c2bd9;
+}
+
+.active {
+    color: #6c2bd9;
+}
+
+.star{
+    display: flex;
+    align-items: center;
+    margin-right: 0.5em;
+}
+.star button{
+
+    border: 2px solid rgba(0, 0, 0, 0.19);
+    padding: 0.5em 1em;
+    background-color: gainsboro;
+}
+
+header .star .button{
+    border: 2px solid rgba(0, 0, 0, 0.19);
+    padding:.5em 1em;
+    background-color: white;
+
+}
+header .download a button {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding:1em 2em;
+    color: white;
+    background-color: #dc7df1;
+    box-shadow: 0 0 65px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+.padding{
+    padding: 3em 5em;
+}
+
+/*HEADER SECTION ENDS*/
+/*HERO SECTION STARTS*/
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1em;
+}
+.grid-items{
+    grid-column: span 6;
+    align-self: center;
+}
+.grid-img{
+    grid-column: span 6;
+}
+.grid-img img{
+    width: 100%;
+}
+.grid-items h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.0;
+    padding-bottom: 0.3em;
+}
+.grid-items p{
+    line-height: 2;
+    font-weight: 100;
+    padding-bottom: 0.3em;
+}
+.hero-buttons a button{
+    background-color: white;
+    padding: 1em 1.5em;
+    border-radius: 8px;
+    color: black;
+    border: 1px solid gainsboro;
+
+}
+.grid-icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+
+}
+.grid-icons p{
+    font-size: 2rem;
+    color: gray;
+    font-weight: bold;
+
+}
+/* WORK SECTION */
+.work {
+    background-color: gainsboro;
+}
+.work-text {
+    font-family: var(--normal-font);
+    grid-column: span 6;
+    align-self: center;
+}
+.work-img {
+    grid-column: span 6;
+}
+.work-img img{
+    width: 100%;
+}
+.work-text h1 {
+font-family: var(--bold-font);
+font-size: 2rem;
+font-weight: bold;
+line-height: 1.0;
+padding-bottom: 0.5em;
+}
+.work-text p {
+    line-height: 1.7;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-family: var(--paragraph-font);
+    padding: 1.5em 0;
+}
+.list .list-1 {
+    display: flex;
+    gap:  0.5em;
+    align-items: center;
+}
+.list .list-1 p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.5em 0;
+}
+list .list-1 i{
+background-color: blue;
+border-radius: 50%;
+display: inline-block;
+color: white;
+padding: 0.3em;
+}
+.containers {
+    padding: 0em 7em;
+}
+/* TRUST SECTION */
+.trust-text {
+    font-family: var(--normal-font);
+    grid-column: span 6;
+    align-self: center;
+}
+.trust-text {
+    grid-column: span 6;
+}
+.trust-text h1 {
+font-family: var(--bold-font);
+font-size: 1.5rem;
+font-weight: bold;
+line-height: 1.0;
+padding-bottom: 0;
+}
+.trust-text p{
+    line-height: 1.7;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-family: var(--paragraph-font);
+    padding: 1.5em 0;
+}
+.trust-text p:first-child{
+    padding:0 0 0.5em;
+    color: purple;
+    font-weight: 600;
+
+}
+.list .list-1 {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+.trust-text .list .list-1 p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.5em 0;
+    color: purple;
+
+}
+.trust-text .list .list-1 i {
+    background: none;
+    border-radius: 50%;
+    display: inline-block;
+    color: var(--main-color);
+    padding: 0.3em;
+}
+.trust-text .trust-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+}
+@media only screen and (max-width:992px){
+    header nav{
+        display: none;
+    }
+    .grid-text,
+    .work-text,.trust-text{
+        grid-column: span 12;
+        order: 2;
+    }
+    .grid-img,
+    .work-img{
+        grid-column: span 12;
+
+    }
+    .grid-icons{
+        flex-wrap: wrap;
+
+    }
+    .grid-icons p {
+        font-size: 1rem;
+    }
+    .container{
+        padding: 7em 2em 5em;
+    }
+    .containers {
+        padding: 0em 2em;
+    }
+}
+@media only screen and (max-width:414) {
+    .trust-text .trust-container{
+        grid-template-columns: repeat(1, ifr);
+    }
+    .grid-text h1 {
+        font-size: 2rem;
+    }
+    .star,
+    .button{
+        display: none;
+    }
+}
